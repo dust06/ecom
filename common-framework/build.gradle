@@ -1,0 +1,30 @@
+plugins {
+    id 'java-library'
+}
+
+
+dependencies {
+
+    api 'org.springframework.boot:spring-boot-starter-web'
+    api 'org.springframework.boot:spring-boot-starter-data-redis'
+    api 'org.springframework.boot:spring-boot-starter-data-jpa'
+    api 'org.postgresql:postgresql'
+
+    api 'org.springframework.boot:spring-boot-starter-validation'
+
+    api 'org.apache.commons:commons-lang3:3.18.0'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+}
+
+// Disable the "executable jar" creation since this is just a library
+bootJar {
+    enabled = false
+}
+
+// Enable the standard jar creation
+jar {
+    enabled = true
+}

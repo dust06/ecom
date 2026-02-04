@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5433/monorepo_db
+    username: postgres
+    password: shared_password
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
+        beans:
+          factory: DEBUG
+
+    root: INFO
+    com:
+      ecom:
+        myapp: DEBUG
+
+app:
+  jwt-secret: "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970"
+  jwt-expiry: 86400000

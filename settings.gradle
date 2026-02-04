@@ -1,0 +1,6 @@
+rootProject.name = 'ecom-system'
+
+include 'common-framework'
+include 'auth-service'
+include 'gateway'
+include 'order-service'

@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    implementation project(':common-framework')
+
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.5'
+}
+
+
+bootJar {
+    enabled = true
+}
+
+
+jar {
+    enabled = true
+}

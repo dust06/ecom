@@ -1,0 +1,141 @@
+############################################
+# BUILD OUTPUT (ALL SERVICES)
+############################################
+
+# Gradle
+.gradle/
+**/build/
+
+# Maven
+**/target/
+**/dependency-reduced-pom.xml
+
+
+############################################
+# IDEs & EDITORS
+############################################
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/
+nbbuild/
+dist/
+nbdist/
+
+
+############################################
+# OS FILES
+############################################
+
+.DS_Store
+Thumbs.db
+
+
+############################################
+# LOGS & RUNTIME FILES
+############################################
+
+*.log
+**/logs/
+*.pid
+*.hprof
+hs_err_pid*
+
+
+############################################
+# ENVIRONMENT & SECRETS (CRITICAL)
+############################################
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Spring Boot external configs
+application-local.yml
+application-dev.yml
+application-test.yml
+application-prod.yml
+
+# Credentials & keys
+*.jks
+*.p12
+*.keystore
+*.pem
+
+
+############################################
+# DOCKER & CONTAINERS
+############################################
+
+# Docker local volumes / data
+**/docker-data/
+**/docker-volumes/
+**/pgdata/
+**/redis-data/
+
+# Docker overrides
+docker-compose.override.yml
+
+
+############################################
+# TEST & COVERAGE
+############################################
+
+**/test-results/
+**/surefire-reports/
+**/failsafe-reports/
+**/jacoco/
+**/jacoco.exec
+**/coverage/
+
+
+############################################
+# JAVA / JVM
+############################################
+
+*.class
+replay_pid*
+
+
+############################################
+# FRONTEND (OPTIONAL / FUTURE-PROOF)
+############################################
+
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+############################################
+# MONOREPO SAFETY
+############################################
+
+# Generated sources (OpenAPI, clients, etc.)
+**/generated/
+
+# Spring devtools
+**/.spring-boot-devtools.properties
+
+
+############################################
+# CI / TEMP
+############################################
+
+.github/workflows/*.log
